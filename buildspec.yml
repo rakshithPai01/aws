@@ -7,5 +7,5 @@ artifacts:
   files:
     -echo files........
     - echo $CODEBUILD_SRC_DIR
-    - '$CODEBUILD_SRC_DIR/build/libs/dockerJar1-0.2.0'
-  name: $(AWS_REGION)-$(date +%Y-%m-%d) 
+    - '$CODEBUILD_SRC_DIR/build/libs/*'
+  name: $(AWS_REGION)-$(date +%Y-%m-%d)
