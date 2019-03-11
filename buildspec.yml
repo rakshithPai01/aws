@@ -5,6 +5,8 @@ phases:
       - gradle build
 artifacts:
   files:
+  commands:
+    ls ./build/libs/    
     -echo files........
     - echo $CODEBUILD_SRC_DIR
     - 'build/*'
