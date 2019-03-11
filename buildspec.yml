@@ -7,6 +7,6 @@ artifacts:
   commands:
    - echo $CODEBUILD_SRC_DIR
   files:
-    - 'build/libs/*'
+    - 'build/libs/docker*'
   name: $(AWS_REGION)-$(date +%Y-%m-%d)
  
