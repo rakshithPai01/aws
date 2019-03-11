@@ -6,7 +6,7 @@ phases:
 artifacts:
   commands:
    - echo $CODEBUILD_SRC_DIR
-   - echo ls ./build/libs/
-    files:
+  files:
     - 'build/libs/*'
+  name: $(AWS_REGION)-$(date +%Y-%m-%d)
  
