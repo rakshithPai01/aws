@@ -4,10 +4,9 @@ phases:
     commands:
       - gradle build
 artifacts:
-  files:
   commands:
-    -echo ls ./build/libs/    
-    -echo files........
-    - echo $CODEBUILD_SRC_DIR
-    - 'build/*'
-  name: $(AWS_REGION)-$(date +%Y-%m-%d)
+   - echo $CODEBUILD_SRC_DIR
+   - echo ls ./build/libs/
+    files:
+    - 'build/libs/*'
+ 
