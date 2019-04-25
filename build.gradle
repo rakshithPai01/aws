@@ -6,7 +6,6 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.docker'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
 bootJar {
 	baseName = 'dockerJar1'
 	version =  '0.2.0'
